@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-22</title>
+
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: lightgray;
+            height: 618px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .our-services {
+            background-color: lightsteelblue;
+            /* width: 1130px; */
+            width: 84%;
+            height: fit-content;
+            display: flex;
+            box-shadow: 0px 0px 19px -4px #000000;
+        }
+
+        .side-line {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            position: absolute;
+        }
+
+        .line {
+            height: 25px;
+            border: 3px solid #45576e;
+            cursor: pointer;
+            position: relative;
+            top: 174px;
+            right: 605px;
+        }
+
+        .line:hover {
+            border-color: red;
+        }
+
+        .left {
+            background-color: #202020;
+            width: 60%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: end;
+            padding: 31px 0px;
+        }
+
+        .left-child {
+            margin: 0px 50px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 33px;
+        }
+
+        .left-heading>h1 {
+            /* background-color: lightgoldenrodyellow; */
+            font-size: 30px;
+            letter-spacing: 4px;
+            color: red;
+            font-weight: 700;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .our-hover {
+            float: right;
+        }
+
+        .our-hover:hover {
+            padding-right: 40px;
+            border: none;
+            border-right: 5px solid red;
+        }
+
+        .our-hover:hover .change-color {
+            color: #f4f5f9;
+        }
+
+        .left-content {
+            /* background-color: lightcoral; */
+            color: white;
+            text-align: right;
+            width: 77%;
+            cursor: pointer;
+        }
+
+        .left-content>h1 {
+            font-size: 14px;
+            line-height: 29px;
+            letter-spacing: 0.6px;
+            color: #e74c3c;
+            font-weight: 500;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            text-align: right;
+        }
+
+        .left-content>p {
+            font-size: 13px;
+            line-height: 29px;
+            color: #999999;
+            font-weight: 400;
+            font-family: sans-serif;
+            text-align: right;
+        }
+
+        .center {
+            /* background-color: lightpink; */
+            width: fit-content;
+            position: absolute;
+            top: 196px;
+            right: 546px;
+            gap: 69px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .icon {
+            height: 45px;
+            width: 45px;
+            border: 5px solid #00000082;
+            box-shadow: 0px 0px 6px 0px #a1a1a1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f5f9;
+        }
+
+        .icon>i {
+            font-size: 21px;
+            color: #d77171;
+        }
+
+        .right {
+            background-color: lightgreen;
+            background-image: url(images/right-image.png);
+            background-size: cover;
+            width: 40%;
+            height: 500px;
+            padding: 31px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- main  -->
+    <div class="container">
+
+        <!-- parent  -->
+        <div class="our-services">
+
+            <!-- left  -->
+            <div class="left">
+                <div class="left-child">
+
+                    <!-- side-line  -->
+                    <div class="side-line">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="left-heading our-hover">
+                        <h1 class="change-color">our services</h1>
+                    </div>
+                    <div class="left-content our-hover">
+                        <h1 class="change-color">web design</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has
+                            been
+                            the industry's standard dummy text ever.
+                        </p>
+                    </div>
+                    <div class="left-content our-hover">
+                        <h1 class="change-color">web design</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has
+                            been
+                            the industry's standard dummy text ever.
+                        </p>
+                    </div>
+                    <div class="left-content our-hover">
+                        <h1 class="change-color">web design</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has
+                            been
+                            the industry's standard dummy text ever.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- center  -->
+            <div class="center">
+                <div class="icon"><i class="bi bi-pc-display-horizontal"></i></div>
+                <div class="icon"><i class="bi bi-database"></i></div>
+                <div class="icon"><i class="bi bi-camera"></i></div>
+            </div>
+
+            <!-- right  -->
+            <div class="right"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

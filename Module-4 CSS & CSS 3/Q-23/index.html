@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-23</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 1360px;
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg-image {
+            width: 1130px;
+            height: 500px;
+            background: linear-gradient(to right, #202020b0, #202020b0), url(images/Put\ Your\ Image.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: lightblue;
+            background-position: center;
+        }
+
+        .heading-1 {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+        .heading-1>h1 {
+            font-size: 30px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 4px;
+            color: #ffffff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .heading-1>p {
+            font-size: 13px;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 50px;
+            color: #f4f5f9;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .hr-line {
+            height: 25px;
+            width: 220px;
+            /* background-color: lightcoral; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .line {
+            border: 2px solid #6262626b;
+            width: 88px;
+            border-radius: 20px;
+        }
+
+        .point {
+            height: 8px;
+            width: 8px;
+            background-color: #ff00007a;
+            border-radius: 50%;
+        }
+
+        /* 
+
+        .vave {
+            width: 1130px;
+            height: 486px;
+            position: absolute;
+            top: 0;
+        }
+
+        .vave svg {
+            position: relative;
+            top: 225px;
+        } */
+
+        /* heading-2 */
+        /* dev-1  */
+        .heading-2 {
+            display: flex;
+            justify-content: center;
+            gap: 9px;
+        }
+
+        .dev-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: lightgoldenrodyellow; */
+            width: 175px;
+            height: 50px;
+            position: relative;
+        }
+
+        .dev-1-photo {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 45px;
+            background-image: url(images/dev-1-photo.png);
+            background-size: cover;
+            border: 2px solid red;
+        }
+
+        .more-1 {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dev-1-hover {
+            width: 175px;
+            display: none;
+        }
+
+        .more-1:hover {
+            width: 50px;
+            height: 49px;
+        }
+
+        .more-1:hover>.dev-1-hover {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+        }
+
+        .v-line {
+            border: 1px solid #ffffff59;
+            height: 26px;
+            width: 0px;
+        }
+
+        .dev-1-hover>h2 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e74c3c;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 2;
+            padding-top: 15px;
+            margin: 0;
+        }
+
+        .dev-1-hover>p {
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* dev-2  */
+        .dev-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: lightgoldenrodyellow; */
+            width: 175px;
+            height: 50px;
+            position: relative;
+        }
+
+        .dev-2-photo {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 45px;
+            background-image: url(images/dev-2-photo.png);
+            background-size: cover;
+            border: 2px solid red;
+        }
+
+        .more-2 {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dev-2-hover {
+            width: 175px;
+            display: none;
+        }
+
+        .more-2:hover {
+            width: 50px;
+            height: 49px;
+        }
+
+        .more-2:hover>.dev-2-hover {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+        }
+
+        .v-line {
+            border: 1px solid #ffffff59;
+            height: 26px;
+            width: 0px;
+        }
+
+        .dev-2-hover>h2 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e74c3c;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 2;
+            padding-top: 15px;
+            margin: 0;
+        }
+
+        .dev-2-hover>p {
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* dev-3  */
+        .dev-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: lightgoldenrodyellow; */
+            width: 175px;
+            height: 50px;
+            position: relative;
+        }
+
+        .dev-3-photo {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 45px;
+            background-image: url(images/dev-3-photo.png);
+            background-size: cover;
+            border: 2px solid red;
+        }
+
+        .more-3 {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dev-3-hover {
+            width: 175px;
+            display: none;
+        }
+
+        .more-3:hover {
+            width: 50px;
+            height: 49px;
+        }
+
+        .more-3:hover>.dev-3-hover {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+        }
+
+        .v-line {
+            border: 1px solid #ffffff59;
+            height: 26px;
+            width: 0px;
+        }
+
+        .dev-3-hover>h2 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e74c3c;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 2;
+            padding-top: 15px;
+            margin: 0;
+        }
+
+        .dev-3-hover>p {
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* dev-4  */
+        .dev-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: lightgoldenrodyellow; */
+            width: 175px;
+            height: 50px;
+            position: relative;
+        }
+
+        .dev-4-photo {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 45px;
+            background-image: url(images/dev-4-photo.png);
+            background-size: cover;
+            border: 2px solid red;
+        }
+
+        .more-4 {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dev-4-hover {
+            width: 175px;
+            display: none;
+        }
+
+        .more-4:hover {
+            width: 50px;
+            height: 49px;
+        }
+
+        .more-4:hover>.dev-4-hover {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+        }
+
+        .v-line {
+            border: 1px solid #ffffff59;
+            height: 26px;
+            width: 0px;
+        }
+
+        .dev-4-hover>h2 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e74c3c;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 2;
+            padding-top: 15px;
+            margin: 0;
+        }
+
+        .dev-4-hover>p {
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* dev-5  */
+        .dev-5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: lightgoldenrodyellow; */
+            width: 175px;
+            height: 50px;
+            position: relative;
+        }
+
+        .dev-5-photo {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 45px;
+            background-image: url(images/dev-5-photo.png);
+            background-size: cover;
+            border: 2px solid red;
+        }
+
+        .more-5 {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dev-5-hover {
+            width: 175px;
+            display: none;
+        }
+
+        .more-5:hover {
+            width: 50px;
+            height: 49px;
+        }
+
+        .more-5:hover>.dev-5-hover {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+        }
+
+        .v-line {
+            border: 1px solid #ffffff59;
+            height: 26px;
+            width: 0px;
+        }
+
+        .dev-5-hover>h2 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e74c3c;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 2;
+            padding-top: 15px;
+            margin: 0;
+        }
+
+        .dev-5-hover>p {
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="bg-image">
+                <div class="heading-1">
+                    <h1>our team</h1>
+                    <p>Meet the craziest team. Share your thoughts with them.</p>
+                    <div class="hr-line">
+                        <div class="line"></div>
+                        <div class="point"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="heading-2">
+                    <div class="dev-1">
+                        <div class="more-1">
+                            <div class="dev-1-photo"></div>
+                            <div class="dev-1-hover">
+                                <div class="v-line"></div>
+                                <h2>web designer</h2>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-2">
+                        <div class="more-2">
+                            <div class="dev-2-photo"></div>
+                            <div class="dev-2-hover">
+                                <div class="v-line"></div>
+                                <h2>web designer</h2>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-3">
+                        <div class="more-3">
+                            <div class="dev-3-photo"></div>
+                            <div class="dev-3-hover">
+                                <div class="v-line"></div>
+                                <h2>web designer</h2>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-4">
+                        <div class="more-4">
+                            <div class="dev-4-photo"></div>
+                            <div class="dev-4-hover">
+                                <div class="v-line"></div>
+                                <h2>web designer</h2>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev-5">
+                        <div class="more-5">
+                            <div class="dev-5-photo"></div>
+                            <div class="dev-5-hover">
+                                <div class="v-line"></div>
+                                <h2>web designer</h2>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="vave">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#e74c3c" fill-opacity="0.45"
+                        d="M0,224L60,192C120,160,240,96,360,80C480,64,600,96,720,128C840,160,960,192,1080,181.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                    </path>
+                </svg>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
