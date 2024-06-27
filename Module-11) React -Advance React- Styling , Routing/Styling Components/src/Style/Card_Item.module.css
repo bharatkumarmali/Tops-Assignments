@@ -1,0 +1,17 @@
+.categories{
+    display: flex;
+    margin: 20px;
+    margin-left: 40px;
+}
+.categories a {
+color:  rgb(56, 54, 54);
+text-decoration: none;
+font-size:  18px;
+margin: 15px 17px 0px 0px ;
+padding: 0px 10px 0px 0px ;
+
+}
+.categories a:hover{
+    color: rgb(176, 49, 140);
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
