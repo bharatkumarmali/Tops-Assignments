@@ -1,0 +1,40 @@
+{
+  "service": [
+    {
+      "id": "1717094242321",
+      "ser_img": "https://m.media-amazon.com/images/I/91lGylOzWsL._AC_UF1000,1000_QL80_.jpg",
+      "ser_name": "radha krishna",
+      "ser_desc": "jfdhijohsdfoijhas"
+    }
+  ],
+  "project": [
+    {
+      "id": "1717092483435",
+      "pro_name": "bharat mali",
+      "pro_img": "https://media.istockphoto.com/id/1164329797/photo/hindu-sadhu-sitting-on-a-boat-overlooking-varanasi-city-architecture-at-sunset.webp?b=1&s=170667a&w=0&k=20&c=b-Bgndn9KuFLsZFTVndH5SQNlmB1psFJf69uytesCwc=",
+      "pro_desc": "hello, this project based on market, which you are thinking now about market."
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "123"
+    }
+  ]
+}
